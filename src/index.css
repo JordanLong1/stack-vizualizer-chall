@@ -1,4 +1,4 @@
-
+/* 
 body {
   margin: 0; 
   padding: 0;
@@ -8,24 +8,34 @@ body {
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-top: 10%;
+}
 
+/* .stacker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .container h1 {
+  text-align: center;
 }
 
 input {
   width: 25%;
 }
 
-button {
-  width: 15%;
-  margin-left: 600px;
-}
 
 .stack-style {
   border: solid 2px black;
   height: 15px; 
   width: 30px;
-  flex-direction: column;
-  justify-content: center;
-}
+}  */
+
+/* .app {
+  width: auto;
+  height: auto;
+} */
+
