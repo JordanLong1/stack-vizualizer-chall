@@ -18,7 +18,7 @@ function App() {
 
     let newStack = [...stacker] // create a copy of our stacker array
 
-    newStack.unshift(number) // take the copy of our stacker array and add in number at the beginning.
+    newStack.push(number) // take the copy of our stacker array and add in number at the beginning.
 
     setStacker(newStack) // set the state of stacker to our copied array
 
@@ -30,21 +30,22 @@ function App() {
   const handlePop = () => {
 
     let popper = [...stacker] // create a copy of our stacker array again
-popper.shift()  // remove the element from the beginning of the array. 
+popper.pop()  // remove the element from the beginning of the array. 
 
     setStacker(popper)
 
   }
 
   return (
-    <div className='container'>
+    <div className='app'>
       <h1>Imma Stack</h1>
       <input type='number' onChange={handleChange} value={number} />
+
       <button onClick={handlePush}>push</button>
       <button onClick={handlePop}>pop</button>
 
-      <div>
-        {stacker.map(stack => <div className='stack-style' >{stack}</div>)}
+      <div style={{display: 'flex', flexDirection: 'column-reverse', alignItems: 'center'}}>
+        {stacker.map(stack => <div style={{border: '1px solid black'}}>{stack}</div>)}
       </div>
 
       
