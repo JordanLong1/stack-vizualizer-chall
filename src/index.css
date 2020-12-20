@@ -6,17 +6,26 @@ body {
 
 
 .container {
-  position: relative; 
-  margin-left: 40%;
-  margin-top: 15%
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+
+}
+
+input {
+  width: 25%;
+}
+
+button {
+  width: 15%;
+  margin-left: 600px;
 }
 
 .stack-style {
   border: solid 2px black;
   height: 15px; 
   width: 30px;
- margin-left: 10%;
- position: relative;
- top: 15px;
- text-align: center;
+  flex-direction: column;
+  justify-content: center;
 }
